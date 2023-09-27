@@ -1,63 +1,58 @@
-Claro! Aqui está um exemplo de `README.md` para o projeto de web scraping:
 
----
+# Web Scraper for "Books to Scrape"
 
-# Web Scraper para "Books to Scrape"
+This project is a simple web scraper developed in Python to extract book information from the [Books to Scrape](http://books.toscrape.com/) website. It scrapes details such as title, price, availability, and book ratings.
 
-Este projeto é um web scraper simples desenvolvido em Python para extrair informações de livros do site [Books to Scrape](http://books.toscrape.com/). Ele raspa detalhes como título, preço, disponibilidade e classificação dos livros.
-
-## Requisitos
+## Requirements
 
 - Python 3.x
-- Bibliotecas: `requests`, `bs4` (BeautifulSoup)
+- Libraries: `requests`, `bs4` (BeautifulSoup)
 
-## Estrutura do Projeto
+## Project Structure
 
 ```
 web_scraper/
 │
 ├── source/
 │   ├── scraper/
-│   │   └── scraper.py       # Funções relacionadas ao web scraping
+│   │   └── scraper.py       # Functions related to web scraping
 │   │
 │   ├── logger/
-│   │   └── logger.py        # Configurações de logging
+│   │   └── logger.py        # Logging configurations
 │   │
-│   ├── config.py            # Configurações constantes, como URL base e User-Agents
-│   └── main.py              # Arquivo principal para execução e interação com o usuário
+│   ├── config.py            # Constant configurations, such as base URL and User-Agents
+│   └── main.py              # Main file for execution and user interaction
 │
-└── README.md                # Documentação do projeto
-      # Documentação do projeto
+└── README.md                # Project documentation
 ```
 
-## Como Utilizar
+## How to Use
 
-1. **Instalação das Dependências**:
-   Primeiro, instale as bibliotecas necessárias usando pip:
+1. **Dependency Installation**:
+   First, install the required libraries using pip:
    ```
    pip install requests bs4
    ```
 
-2. **Execução**:
-   - Abra o terminal ou prompt de comando.
-   - Navegue até o diretório onde os arquivos do projeto estão localizados.
-   - Execute o arquivo `main.py`:
+2. **Execution**:
+   - Open the terminal or command prompt.
+   - Navigate to the directory where the project files are located.
+   - Run the `main.py` file:
      ```
      python source/main.py
      ```
 
-3. **Interagindo com o Script**:
-   - O script solicitará que você insira o número de páginas que deseja raspar. Por exemplo, digite `2` para raspar as duas primeiras páginas.
-   - Em seguida, ele pedirá o nome do arquivo de saída. Você pode pressionar Enter para usar o padrão (`livros.csv`) ou fornecer um nome diferente.
-   - O script começará a raspar os dados e exibirá mensagens de log informando o progresso.
+3. **Interacting with the Script**:
+   - The script will prompt you to enter the number of pages you wish to scrape. For example, type `2` to scrape the first two pages.
+   - Next, it will ask for the output file name. You can press Enter to use the default (`books.csv`) or provide a different name.
+   - The script will start scraping the data and display log messages indicating progress.
 
-4. **Verificação**:
-   - Após a conclusão do script, verifique o arquivo de saída no mesmo diretório. Ele deve conter os dados raspados dos livros.
+4. **Verification**:
+   - After the script completes, check the output file in the same directory. It should contain the scraped data from the books.
 
-## Notas
+## Notes
 
-- Este web scraper foi desenvolvido para fins educacionais.
-- Sempre verifique os termos de serviço e o arquivo `robots.txt` de um site antes de realizar web scraping para garantir que você tenha permissão e não esteja violando nenhuma regra.
+- This web scraper was developed for educational purposes.
+- Always check the terms of service and the `robots.txt` file of a website before performing web scraping to ensure you have permission and are not violating any rules.
 
 ---
-
